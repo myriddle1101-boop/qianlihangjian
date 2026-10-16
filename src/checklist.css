@@ -1,0 +1,29 @@
+/* Checklist-specific hierarchy: one material per row and a single visible readiness control. */
+.material-card {
+  grid-column: 1 / -1;
+}
+
+.check-toggle {
+  width: 46px;
+  height: 42px;
+  padding: 0;
+  border: 0;
+  border-radius: 11px;
+  display: inline-flex;
+  align-items: center;
+  justify-content: center;
+  color: #8a94a3;
+  background: transparent;
+  transition: 160ms ease;
+}
+
+.check-toggle:hover,
+.check-toggle:focus-visible {
+  color: var(--coral);
+  background: #fff5f1;
+}
+
+.check-toggle.checked {
+  color: var(--green);
+  background: transparent;
+}
